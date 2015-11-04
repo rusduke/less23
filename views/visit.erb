@@ -7,13 +7,13 @@
   
   <div class="form-group">
     <label>Ваше имя</label>
-    <input name="username" type="text" class="form-control" placeholder="Введите ваше имя">
+    <input id="bbb" name="username" type="text" class="form-control" placeholder="Введите ваше имя">
   </div>
   <div class="form-group">
 
   <div class="form-group">
     <label>Телефон</label>
-    <input name="phone" type="text" class="form-control" placeholder="Введите ваш телефон">
+    <input name="phone" type="text" class="form-control ccc" placeholder="Введите ваш телефон">
   </div>
   <div class="form-group">
 
@@ -24,7 +24,7 @@
   <div class="form-group">
 
   <label>Выберите парикмахера</label>
-  <select class="form-control", name='barber'>
+  <select class="form-control ccc", name='barber'>
     <option value="Jessie Pinkman">Jessie Pinkman</option>
     <option value="Walter White">Walter White</option>
     <option value="Gus Pring">Gus Pring</option>
@@ -36,4 +36,6 @@
 </form>
 <script type="text/javascript">
 $('#aaa').css('background-color','yellow');
+$('#bbb').css('background-color','gray');
+$('.ccc').css('background-color','red');
 </script>
