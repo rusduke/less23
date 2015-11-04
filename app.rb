@@ -28,6 +28,7 @@ post '/visit' do
 	f = File.open './public/users.txt','a'
 	f.write "User: #{@username}, phone #{@phone}, date & time #{@datetime}, #{@barber}\n"
 	erb :visit
+	#erb "Ok, #{username}, we are waiting for you"
 end 
 
 get '/contacts' do
@@ -43,6 +44,5 @@ post '/contacts' do
 		f1 = File.open './public/contacts.txt','a'
 		f1.write "E-mail: #{@email}, Text #{@message}\n"
 	end
-
 	erb :contacts
 end 
