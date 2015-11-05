@@ -18,12 +18,11 @@
   <div class="form-group">
 
   <div class="form-group">
-    <label>Желаемое время записи</label>
-    <input id="aaa" name="datetime" type="text" class="form-control" placeholder="Введите дату и время">
-  </div>
-  <div class="form-group">
+      <label>Желаемая дата записи</label><br>
 
-  <label>Выберите парикмахера</label>
+    <input data-provide="datepicker" name="datetime" data-date-format="dd/mm/yyyy">
+
+  <br><label>Выберите парикмахера</label>
   <select class="form-control ccc", name='barber'>
     <option value="Jessie Pinkman">Jessie Pinkman</option>
     <option value="Walter White">Walter White</option>
@@ -48,9 +47,14 @@
       <option value="#e1e1e1">Gray</option>
     </select>
   </div>
-    
+
   <button type="submit" class="btn btn-primary">Записаться</button>
 </form>
+
+
+<script type="text/javascript">
+$('#datepicker').datepicker();
+</script>
 
 <script type="text/javascript">
 $('#color').simplecolorpicker();
